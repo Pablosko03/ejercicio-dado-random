@@ -22,7 +22,7 @@ boton.addEventListener('click', () => {
 
     // Mostrar la imagen del dado
     imagenDado.classList.remove('flip');
-    void imagenDado.offsetWidth; // Forzar el reflow
+    void imagenDado.offsetWidth; // Forzar el flip
     imagenDado.classList.add('flip');
 
     // Cambiar la imagen del dado después de la animación
@@ -30,7 +30,6 @@ boton.addEventListener('click', () => {
         imagenDado.src = `assets/dado${numeroRandom}.png`;
     });
 
-    // Mostrar el número de la tirada anterior (si existe)
     if (numeroAnterior !== null) {
         console.log(`Número anterior: ${numeroAnterior}`);
     }
