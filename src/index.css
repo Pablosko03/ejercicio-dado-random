@@ -2,6 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column; /* Alinea el contenido en columna */
   justify-content: center;
   align-items: center;
   background-color: #f0f4f8;
@@ -45,4 +46,27 @@ button:hover #texto-boton {
   50% { transform: rotate(180deg); }
   75% { transform: rotate(270deg); }
   100% { transform: rotate(360deg); }
+}
+
+#historial {
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#historial p {
+  margin: 5px 0;
+}
+
+#historial:hover {
+  transform: translateY(-5px);
+  opacity: 90%;
 }
