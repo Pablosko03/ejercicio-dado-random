@@ -5,7 +5,7 @@ const historialElemento = document.getElementById('historial'); // Elemento dond
 
 let primerClick = true;
 let historial = []; // Array para guardar los números sacados
-let numeroAnterior = null; // Variable para almacenar el número de la tirada anterior
+let numeroAnterior = 0; // Variable para almacenar el número de la tirada anterior
 
 boton.addEventListener('click', () => {
     if (primerClick) {
