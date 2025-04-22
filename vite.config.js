@@ -9,7 +9,7 @@ const base = mode === "production" && isGitHubPages ? "/" + folderName : "/";
 
 export default defineConfig({
   root: "src",
-  base,
+  base: '/ejercicio-dado-random/',
   mode,
   envDir: "../",
   publicDir: "../public",
