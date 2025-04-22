@@ -39,7 +39,7 @@ boton.addEventListener('click', () => {
     const numeroMasFrecuente = obtenerNumeroMasFrecuente(historial);
 
     // Actualizar el historial en el texto
-    historialElemento.textContent = `Número anterior: ${numeroAnterior}, Número más frecuente: ${numeroMasFrecuente}`;
+    historialElemento.innerHTML = `Número anterior: ${numeroAnterior}<br>Número más frecuente: ${numeroMasFrecuente}`;
 
     // Actualizar el número anterior para la siguiente tirada
     numeroAnterior = numeroRandom;
