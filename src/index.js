@@ -1,7 +1,7 @@
-const boton = document.getElementById('botonDado');
-const imagenDado = document.getElementById('imagen-dado');
-const textoBoton = document.getElementById('texto-boton');
-const historialElemento = document.getElementById('historial'); // Elemento donde mostraremos el historial
+const boton = document.querySelector('#botonDado');
+const imagenDado = document.querySelector('#imagen-dado');
+const textoBoton = document.querySelector('#texto-boton');
+const historialElemento = document.querySelector('#historial'); // Elemento donde mostraremos el historial
 
 let primerClick = true;
 let historial = []; // Array para guardar los números sacados
@@ -9,8 +9,8 @@ let numeroAnterior = 0; // Variable para almacenar el número de la tirada anter
 
 boton.addEventListener('click', () => {
     if (primerClick) {
-        textoBoton.style.display = 'none';
-        imagenDado.style.display = 'block';
+        textoBoton.classList.add('oculto');
+        imagenDado.classList.remove('oculto');
         primerClick = false;
     }
 
@@ -30,9 +30,9 @@ boton.addEventListener('click', () => {
         imagenDado.src = `assets/dado${numeroRandom}.png`;
     });
 
-    if (numeroAnterior !== null) {
-        console.log(`Número anterior: ${numeroAnterior}`);
-    }
+    // if (numeroAnterior !== null) {
+    //     console.log(`Número anterior: ${numeroAnterior}`);
+    // }
 
     // Obtener el número que más ha salido
     const numeroMasFrecuente = obtenerNumeroMasFrecuente(historial);
