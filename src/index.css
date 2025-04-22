@@ -5,7 +5,7 @@ body {
   flex-direction: column; /* Alinea el contenido en columna */
   justify-content: center;
   align-items: center;
-  background-color: #f0f4f8;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-family: sans-serif;
 }
 
